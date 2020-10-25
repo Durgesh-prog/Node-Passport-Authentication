@@ -1,0 +1,32 @@
+<div class='sub-wrapper'>
+		<div>
+			<h1 class="mt-4">Dashboard</h1>
+			<p class="lead mb-3">Welcome <%= user.username %></p>
+			<a href="/logout" >Logout</a>
+		</div>
+		<div class='add'>
+			<a href='/user/dashboard/create'>Add New Task</button>
+		</div>
+</div>
+<hr>
+<div class='mainScreen'>
+	<h3>Tasks</h3>
+	<div class='card'>
+		 <ul  class="list-group list-group-flush">
+		 <% if(typeof task != 'undefined'){ %>
+			<% task.forEach(function(list) { %>
+				<li class="list-group-item ">
+					<p> <%= list.task %></p>
+					 <a href='/user/dashboard/update/<%= list._id %>' class='btn btn-primary mx-2'>Update</a>
+					 <a href='/user/dashboard/delete/<%= list._id %>' class='btn btn-danger mx-2'>Delete</a>
+				</li>
+			<% }); %>
+			 <% } %>
+		 </ul>
+		</div>
+</div>
+
+
+
+ 
+ 

@@ -1,0 +1,19 @@
+<div class='wrapper'>
+<h1 style="margin-top:2rem">Add Task</h1>
+  <form class='wrapper' action="/user/dashboard/create" method="POST">
+	<div class="form-group">
+	  <label for="task">New Task</label>
+	  <input
+		type="text"
+		id="task"
+		name="task"
+		placeholder="Enter Task"
+		value="<%= typeof task != 'undefined' ? email : '' %>"
+	  />
+	</div>
+	<button type="submit" class="btn btn-success" >
+	 Create
+	</button>
+  </form>
+</div>
+

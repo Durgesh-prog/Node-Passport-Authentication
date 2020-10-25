@@ -1,0 +1,33 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+body{
+	font-size:18px;
+}
+
+.wrapper{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column;
+	margin-top:2rem;
+}
+
+.mainScreen{
+	display:grid;
+	grid-template-columns:1fr 1fr;
+}
+
+.sub-wrapper{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	width:100vw;
+}
+
+.sub-wrapper .add{
+	margin-left:auto;
+	margin-right:2rem;
+}
